@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "VTPL GeM Auto Refresh",
+  "version": "1.0",
+  "description": "Auto refreshes GeM seller bids page safely to avoid auto logout.",
+  "permissions": ["storage"],
+  "host_permissions": [
+    "https://bidplus.gem.gov.in/seller-bids*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://bidplus.gem.gov.in/seller-bids*"],
+      "js": ["content.js"]
+    }
+  ]
+}

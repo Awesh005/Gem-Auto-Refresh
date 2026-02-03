@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>GeM Automation</h1>
+      <p class="subtitle">Auto Refresh Helper</p>
+    </header>
+
+    <main class="content">
+      <div class="toggle-section">
+        <div class="toggle-info">
+          <p class="toggle-label">Extension Status</p>
+          <p class="toggle-value" id="status">Inactive</p>
+        </div>
+
+        <label class="switch">
+          <input type="checkbox" id="toggle" />
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div class="indicator" id="indicator">
+        <span class="dot"></span>
+        <span class="indicator-text" id="indicator-text">Ready</span>
+      </div>
+    </main>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
